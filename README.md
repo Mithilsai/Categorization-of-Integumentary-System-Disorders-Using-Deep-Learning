@@ -1,1 +1,1 @@
-# Deployment-Deep-Learning-Model
+# Categorization of Integumentary System Disorders Using Deep Learning
