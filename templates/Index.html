@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>FunGI!</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link href="{{ url_for('static', filename='css/Style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <i class="fa fa-shield-virus" aria-hidden="true"></i> <b>FunGI!</b></a>
+      </nav>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-7 col-sm-12  text-white">
+          <h1>Terminate the Fungus</h1>
+          <p>
+            We save your money and time and make you feel comfortable all the time using deep learning.
+          </p>
+          <a class="btn btn-light px-5 py-2 primary-btn" href="/second">Let's test</a>
+        </div>
+        <div class="col-md-5 col-sm-12  h-25">
+          <img src="{{ url_for('static', filename='css/img/hero.svg') }}" alt="Book" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-3 container-fluid p-0 text-center">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h1>Access Our Application over Multiple Platforms</h1>
+          <p>
+            Users from across the globe can access our website through multiple platforms connected to internet. We are working on connecting with users offline.
+          </p>
+        </div>
+      </div>
+      <div class="platform row">
+        <div class="col-md-6 col-sm-12 text-right">
+          <div class="desktop shadow-lg">
+            <div class="d-flex flex-row justify-content-center">
+              <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+              <div class="text text-left">
+                <h3 class="pt-1 m-0">Desktop</h3>
+                <p class="p-0 m-0">On Website</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 text-left">
+          <div class="desktop shadow-lg">
+            <div class="d-flex flex-row justify-content-center">
+              <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
+              <div class="text text-left">
+                <h3 class="pt-1 m-0">On Mobile</h3>
+                <p class="p-0 m-0">On Website</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="section-4">
+      <div class="container text-center">
+        <h1 class="text-dark">Our Team</h1>
+        <p class="text-secondary">We have the best individuals, teamed up to provide you the best service.</p>
+      </div>
+      <div class="team row " id="team">
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="{{ url_for('static', filename='css/img/UI-face-3.jpg') }}" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">M. Sai Ram Asish</h3>
+                  <p class="card-text">
+                    Researcher and engrossed in the fields of Machine learning, Fullstack-Web Development, Cyber security.
+                  </p>
+                  <a href="https://www.linkedin.com/in/sai-ram-asish-m/" class="text-secondary text-decoration-none">Backend Developer</a>
+                  <p class="text-black-50">Graduate of Sathyabama University, Chennai</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="{{ url_for('static', filename='css/img/UI-face-4.jpg') }}" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Jakka Mithil Sai</h3>
+                  <p class="card-text">
+                    Researcher and engrossed in the fields of Data analysis, UI/UX Design, Fullstack-Web Development.
+                  </p>
+                  <a href="https://www.linkedin.com/in/mithil1729/" class="text-secondary text-decoration-none">UI/UX and Frontend Developer</a>
+                  <p class="text-black-50">Graduate of Sathyabama University, Chennai</p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+  
+  
+  
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2022 <strong><span>FunGI</span></strong> . All Rights are Reserved
+      </div>
+      <div class="credits">
+        Created by <a href="https://www.linkedin.com/in/sai-ram-asish-m/">Sai Ram Asish</a>, <a href="https://www.linkedin.com/in/mithil-sai-7b5a9116a/">Mithil Sai</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="{{ url_for('static', filename='js/page.js') }}"></script>
+</body>
+
+</html>

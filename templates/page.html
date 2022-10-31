@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block content %}
+<div class="rep">
+<a class="btn btn-info px-5 py-2 primary-btn" href="/data">Report</a>
+</div>
+<div class="text-center">
+<h2>Let's Diagnose your problem</h2><br>
+
+<div>
+    
+    <form id="upload-file" method="post" enctype="multipart/form-data">  
+        <h3>Hello sapien, Kindly upload the infected portion</h3>
+        <label for="iname">Picture of the Infection &#8594</label>
+        <label for="imageUpload" class="upload-label">
+            Choose
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+            <h3 id="result">
+                <span></span>
+            </h3>
+        </div>
+        <div class="mis">
+            <button type="submit" class="btn btn-primary btn-lg " id="btn-predict">Scan</button>
+        </div>
+    </div>
+    
+
+</div>
+</div>
+{% endblock %}
